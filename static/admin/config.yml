@@ -27,3 +27,20 @@ collections:
       - { name: tittleImg, label: TittleImg ,widget: image}
       - { name: logo, label: Logo ,widget: image}
       - { name: body, label: Body, widget: markdown }
+
+
+  - name: freelancersInfo
+    label: Freelancers Info
+    folder: src/freelancersInfo
+    create: true
+    fields:
+      - { name: id, label: Id , widget: number}
+      - { name: name, label: Name ,widget: string}
+      - { name: profession, label: Profession ,widget: string}
+      - { name: rating, label: Rating ,widget: number}
+      - { name: location, label: Location , widget: string}
+      - { name: member, label: Member ,widget: string}
+      - { name: rate, label: Rate,widget: string }
+      - { name: lastReview, label: Last Review,widget: string }
+      - { name: onlineStatus, label: Online Status , widget: boolean }
+      - { name: profile, label: Profile ,widget: image}
