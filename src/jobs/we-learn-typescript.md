@@ -1,7 +1,7 @@
 ---
 id: 1110262454
 publishData: 2023-05-03T10:42:23.443Z
-title: We learn typescript
+title: We learn Javascript
 team: B Technologies
 price: "4500"
 salaryClass: "7000"
