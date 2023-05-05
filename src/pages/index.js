@@ -35,6 +35,20 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query home {
+  logoSection: allMarkdownRemark(
+    filter: {frontmatter: {section: {in: "Clint Logo"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        section
+        Logos {
+          logo
+        }
+      }
+    }
+  }
+
   FeaturedJobs: allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}}) {
       nodes {
         frontmatter {
@@ -118,20 +132,7 @@ query home {
       }
     }
    
-    logoSection: allMarkdownRemark(
-      filter: {frontmatter: {section: {in: "Clint Logo"}}}
-    ) {
-      nodes {
-        frontmatter {
-          id
-          section
-          Logos {
-            logo
-          }
-        }
-      }
-    }
-
+ 
   }
   
   
