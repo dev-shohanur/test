@@ -77,4 +77,16 @@ collections:
             - { name: image, label: Image ,widget: image}
             - { name: rating, label: Rating ,widget: Number}
             - { name: details, label: Details ,widget: string}
+
+  - name: counter
+    label: Counter
+    folder: src/counter
+    create: true
+    fields:
+      -  name: counterData
+         label: Counter Data
+         widget: list 
+         fields: 
+            - { name: number, label: Counter Number ,widget: Number}
+            - { name: title, label: Counter Title ,widget: string}
       

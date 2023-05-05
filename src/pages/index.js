@@ -24,7 +24,7 @@ export default function Home({ data }) {
         <WhyChoose data={data} />
         <FeatureProfile />
         <FeaturedJobs data={data} />
-        <Testimonial />
+        <Testimonial data={data} />
         <CountUpSection />
         <Pricing />
         <LatestNews />
@@ -64,7 +64,27 @@ query home {
         }
       }
     }
+    testimonial: allMarkdownRemark(
+      sort: {id: DESC}
+      filter: {frontmatter: {section: {in: "testimonial"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          testimonial {
+            details
+            image
+            name
+            rating
+            title
+          }
+          title
+          subTitle
+        }
+      }
+    }
   }
+  
   
 `
 

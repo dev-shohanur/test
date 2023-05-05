@@ -42,6 +42,15 @@ module.exports = {
         path: `${__dirname}/src/whyChooseUs/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `testimonial`,
+        // Path to the directory
+        path: `${__dirname}/src/testimonial/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
