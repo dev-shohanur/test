@@ -35,7 +35,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query home {
-  logoSection: allMarkdownRemark(
+  clintLogoSection: allMarkdownRemark(
     filter: {frontmatter: {section: {in: "Clint Logo"}}}
   ) {
     nodes {
