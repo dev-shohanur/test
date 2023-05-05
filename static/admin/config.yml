@@ -57,6 +57,7 @@ collections:
 
   - name: logoSection
     label: Clint Logo Section
+    folder: src/pageMd
     file: src/pageMd/logoSection.md
     create: true
     fields:
