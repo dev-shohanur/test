@@ -56,6 +56,11 @@ query home {
           id
           sectionTitle
           sectionSubTitle
+          sectionCards {
+            cardDetails
+            cardImages
+            title
+          }
         }
       }
     }
