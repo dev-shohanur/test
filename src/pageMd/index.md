@@ -7,12 +7,12 @@ heroSubTitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 heroImage: /images/heroImage.png
 heroUserName: David
 heroUserTitle: UI/UX Designer
-logoSectionLogo1: /images/logo1.png
-logoSectionLogo2: /images/logo2.png
-logoSectionLogo2: /images/logo2.png
-logoSectionLogo3: /images/logo3.png
-logoSectionLogo4: /images/logo4.png
-logoSectionLogo5: /images/logo5.png
+logoSection: 
+    - logo1: /images/logo1.png
+    - logo2: /images/logo2.png
+    - logo3: /images/logo3.png
+    - logo4: /images/logo4.png
+    - logo5: /images/logo5.png
 HowItWorksName: How it works
 HowItWorksTitle: Start find a job you love with us easily
 HowItWorksImage: https://i.ibb.co/ZTKFmBW/righSide.png
