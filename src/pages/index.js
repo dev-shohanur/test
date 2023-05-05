@@ -25,7 +25,7 @@ export default function Home({ data }) {
         <FeatureProfile />
         <FeaturedJobs data={data} />
         <Testimonial data={data} />
-        <CountUpSection />
+        <CountUpSection data={data} />
         <Pricing />
         <LatestNews />
       </div>
@@ -83,6 +83,22 @@ query home {
         }
       }
     }
+
+    counter: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Counter Up"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          counterData {
+            number
+            title
+          }
+        }
+      }
+    }
+
   }
   
   
