@@ -14,14 +14,14 @@ import WhyChoose from '../components/WhyChoose/WhyChoose.js';
 import Layout from '../layout/layout';
 
 export default function Home({ data }) {
-  // console.log(data);
+  console.log(data);
   return (
     <Layout>
       <div className="bg-white">
         <Hero />
         <ClintLogo />
         <HowItWork />
-        <WhyChoose />
+        <WhyChoose data={data} />
         <FeatureProfile />
         <FeaturedJobs data={data} />
         <Testimonial />
@@ -34,18 +34,32 @@ export default function Home({ data }) {
 }
 
 export const query = graphql`
-query FeaturedJobs {
-  allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}}) {
-    nodes {
-      frontmatter {
-        id
-        title
-        tittleImg
-        price
-        locationArea
-        team
+query home {
+  FeaturedJobs: allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}}) {
+      nodes {
+        frontmatter {
+          id
+          title
+          tittleImg
+          price
+          locationArea
+          team
+        }
+      }
+    }
+  whyChooseUs: allMarkdownRemark(
+      sort: {id: DESC}
+      filter: {frontmatter: {sectionTitle: {regex: ""}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          sectionTitle
+          sectionSubTitle
+        }
       }
     }
   }
-}
+  
 `
+

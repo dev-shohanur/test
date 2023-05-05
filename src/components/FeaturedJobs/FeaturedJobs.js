@@ -4,7 +4,7 @@ import { FaEllipsisH, FaHeart } from 'react-icons/fa';
 // import { featuredJobs } from '../../FackData/FackData';
 
 export default function FeaturedJobs({ data }) {
-  const featuredJobs = data.allMarkdownRemark.nodes
+  const featuredJobs = data.FeaturedJobs.nodes
   // console.log(typeof featuredJobs[0].frontmatter?.id);
   return (
     <div>

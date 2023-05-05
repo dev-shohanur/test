@@ -53,10 +53,8 @@ collections:
       - { name: id, label: Id , widget: number}
       - { name: sectionTitle, label: Section Title ,widget: string}
       - { name: sectionSubTitle, label: Section SubTitle ,widget: string}
-      - { name: rating, label: Rating ,widget: number}
-      - { name: location, label: Location , widget: string}
-      - { name: member, label: Member ,widget: string}
-      - { name: rate, label: Rate,widget: string }
-      - { name: lastReview, label: Last Review,widget: string }
-      - { name: onlineStatus, label: Online Status , widget: boolean }
-      - { name: profile, label: Profile ,widget: image}
+      - name: sectionCards 
+      label: Section Cards
+      widget: object
+      fields: 
+       - { name: title, label: title,widget: string}

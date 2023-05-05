@@ -33,6 +33,15 @@ module.exports = {
         path: `${__dirname}/src/freelancersInfo/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `whyChooseUs`,
+        // Path to the directory
+        path: `${__dirname}/src/whyChooseUs/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
