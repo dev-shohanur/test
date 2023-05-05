@@ -64,17 +64,18 @@ collections:
   - name: testimonial
     label: Testimonial
     folder: src/testimonial
+    file: src/testimonial/testimonial.md
     create: true
     fields:
       - { name: title, label: Section Title ,widget: string}
       - { name: subTitle, label: Section Sub Title ,widget: string}
-      - name: testimonial
-        label: Testimonial  Items
-        widget: list 
-        fields: 
-          - { name: name, label: Name ,widget: string}
-          - { name: title, label: Title ,widget: string}
-          - { name: image, label: Image ,widget: image}
-          - { name: rating, label: Rating ,widget: Number}
-          - { name: details, label: Details ,widget: string}
+      -  name: testimonial
+         label: Testimonial  Items
+         widget: list 
+         fields: 
+            - { name: name, label: Name ,widget: string}
+            - { name: title, label: Title ,widget: string}
+            - { name: image, label: Image ,widget: image}
+            - { name: rating, label: Rating ,widget: Number}
+            - { name: details, label: Details ,widget: string}
       
