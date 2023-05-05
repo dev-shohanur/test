@@ -54,3 +54,15 @@ collections:
       - { name: sectionTitle, label: Section Title ,widget: string}
       - { name: sectionSubTitle, label: Section SubTitle ,widget: string}
       - { name: sectionCards, label: sectionCards ,widget: object}
+
+  - name: logoSection
+    label: Clint Logo Section
+    file: src/pageMd/logoSection.md
+    create: true
+    fields:
+      - { name: id, label: Id , widget: number}
+      - { name: image1, label: Logo 1 ,widget: string}
+      - { name: image2, label: Logo 2 ,widget: string}
+      - { name: image3, label: Logo 3 ,widget: string}
+      - { name: image4, label: Logo 4 ,widget: string}
+      - { name: image5, label: Logo 5 ,widget: string}
