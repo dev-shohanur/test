@@ -1,12 +1,14 @@
 import React from 'react';
 
-const ClintLogo = ({ data }) => {
-  const sectionData = data.logoSection.nodes[0].frontmatter;
-  console.log(sectionData);
+const ClintLogo = () => {
   return (
     <div className='container my-[84px]'>
       <div className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2">
-        {sectionData.Logos.map(image => <img className='lg:mb-0 mb-4' src={image.logo} alt="" srcset="" />)}
+        <img className='lg:mb-0 mb-4' src="/images/logo1.png" alt="" srcset="" />
+        <img className='lg:mb-0 mb-4' src="/images/logo2.png" alt="" srcset="" />
+        <img className='lg:mb-0 mb-4' src="/images/logo3.png" alt="" srcset="" />
+        <img className='lg:mb-0 mb-4' src="/images/logo4.png" alt="" srcset="" />
+        <img className='lg:mb-0 mb-4' src="/images/logo5.png" alt="" srcset="" />
       </div>
     </div>
   );
