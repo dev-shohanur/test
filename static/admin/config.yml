@@ -53,4 +53,4 @@ collections:
       - { name: id, label: Id , widget: number}
       - { name: sectionTitle, label: Section Title ,widget: string}
       - { name: sectionSubTitle, label: Section SubTitle ,widget: string}
-      - { name: sectionCards, label: sectionCards ,widget: array}
+      - { name: sectionCards, label: sectionCards ,widget: object}
