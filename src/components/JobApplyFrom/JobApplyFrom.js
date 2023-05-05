@@ -3,7 +3,6 @@ import React from 'react';
 import { FaArrowLeft, FaCloudUploadAlt, FaFile, FaTimes } from 'react-icons/fa';
 
 const JobApplyFrom = ({ data }) => {
-  console.log(data);
   const job = data.markdownRemark.frontmatter;
   return (
     <div>
