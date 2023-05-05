@@ -68,7 +68,7 @@ collections:
       - { name: image4, label: Logo 4 ,widget: image}
       - { name: image5, label: Logo 5 ,widget: image}
 
-  - name: index
+  - name: home
     label: Home
     folder: src/pageMd
     file: src/pageMd/index.md
