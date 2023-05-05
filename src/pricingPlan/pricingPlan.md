@@ -1,13 +1,27 @@
 ---
 id: 1
 section: Pricing Plan
-subTitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-  labore et dolore magna aliqua.
-pricingPlan: 
+subTitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+pricingPlan:
   - title: FREE
     price: 0
     duration: per month
-    pricingPlanItems: 
+    pricingPlanItems:
+      - items: Lorem ipsum dolor sit ame
+      - items: Consectetur adipiscing elit, sed Do
+      - items: eiusmod tempor incididunt
+  - title: PREMIUM
+    duration: per month
+    price: 170
+    pricingPlanItems:
+      - items: Lorem ipsum dolor sit ame
+      - items: Consectetur adipiscing elit, sed Do
+      - items: eiusmod tempor incididunt
+  - title: PLATINUM
+    price: 500
+    duration: per month
+    pricingPlanItems:
       - items: Lorem ipsum dolor sit ame
       - items: Consectetur adipiscing elit, sed Do
       - items: eiusmod tempor incididunt
