@@ -117,6 +117,7 @@ query home {
         }
       }
     }
+   
     logoSection: allMarkdownRemark(
       filter: {frontmatter: {section: {in: "Clint Logo"}}}
     ) {
