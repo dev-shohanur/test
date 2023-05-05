@@ -60,4 +60,22 @@ collections:
           - { name: title, label: Title ,widget: string}
           - { name: cardImages, label: Card Images ,widget: image}
           - { name: cardDetails, label: Card Details ,widget: string}
+
+  - name: testimonial
+    label: Testimonial
+    folder: src/testimonial
+    create: true
+    fields:
+      - { name: id, label: Id , widget: number}
+      - { name: title, label: Section Title ,widget: string}
+      - { name: subTitle, label: Section Sub Title ,widget: string}
+      - name: testimonial
+        label: Testimonial  Items
+        widget: list 
+        fields: 
+          - { name: name, label: Name ,widget: string}
+          - { name: title, label: Title ,widget: string}
+          - { name: image, label: Image ,widget: image}
+          - { name: rating, label: Rating ,widget: Number}
+          - { name: details, label: Details ,widget: string}
       
