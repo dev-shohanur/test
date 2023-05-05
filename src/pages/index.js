@@ -19,7 +19,7 @@ export default function Home({ data }) {
     <Layout>
       <div className="bg-white">
         <Hero />
-        <ClintLogo />
+        <ClintLogo data={data} />
         <HowItWork />
         <WhyChoose data={data} />
         <FeatureProfile />
@@ -114,6 +114,19 @@ query home {
             }
           }
           subTitle
+        }
+      }
+    }
+    clintLogo: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Clint Logo"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          Logos {
+            logo
+          }
         }
       }
     }

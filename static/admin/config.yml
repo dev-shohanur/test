@@ -122,3 +122,18 @@ collections:
          widget: list 
          fields: 
             - { name: logo, label: Logo ,widget: image}
+
+  - name: howItWorks
+    label: How It Works
+    folder: src/howItWorks
+    create: true
+    fields:
+      - { name: section, label: Title ,widget: string}
+      - { name: title, label: Section Title ,widget: string}
+      - { name: sectionImage, label: Section Image ,widget: image}
+      -  name: faq
+         label: FAQ
+         widget: list 
+         fields: 
+            - { name: question, label: Question ,widget: string}
+            - { name: answer, label: answer ,widget: string}
