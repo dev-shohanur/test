@@ -64,7 +64,6 @@ collections:
   - name: testimonial
     label: Testimonial
     folder: src/testimonial
-    file: src/testimonial/testimonial.md
     create: true
     fields:
       - { name: title, label: Section Title ,widget: string}
