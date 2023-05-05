@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 
 const ClintLogo = ({ data }) => {
@@ -12,3 +13,21 @@ const ClintLogo = ({ data }) => {
 };
 
 export default ClintLogo;
+
+export const query = graphql`
+query clintLogo {
+  clintLogoSection: allMarkdownRemark(
+    filter: {frontmatter: {section: {in: "Clint Logo"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        section
+        Logos {
+          logo
+        }
+      }
+    }
+  }
+}
+`

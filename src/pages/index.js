@@ -14,6 +14,7 @@ import WhyChoose from '../components/WhyChoose/WhyChoose.js';
 import Layout from '../layout/layout';
 
 export default function Home({ data }) {
+  console.log(data);
   return (
     <Layout>
       <div className="bg-white">
@@ -34,19 +35,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
 query home {
-  clintLogoSection: allMarkdownRemark(
-    filter: {frontmatter: {section: {in: "Clint Logo"}}}
-  ) {
-    nodes {
-      frontmatter {
-        id
-        section
-        Logos {
-          logo
-        }
-      }
-    }
-  }
+ 
 
   FeaturedJobs: allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}}) {
       nodes {
