@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ClintLogo = ({ data }) => {
-  const sectionData = data.clintLogo.nodes[0].frontmatter;
+  const sectionData = data.logoSection.nodes[0].frontmatter;
   console.log(sectionData);
   return (
     <div className='container my-[84px]'>
