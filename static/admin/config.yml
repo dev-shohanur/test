@@ -53,8 +53,3 @@ collections:
       - { name: id, label: Id , widget: number}
       - { name: sectionTitle, label: Section Title ,widget: string}
       - { name: sectionSubTitle, label: Section SubTitle ,widget: string}
-      - name: sectionCards 
-      label: Section Cards
-      widget: object
-      fields: 
-       - { name: title, label: title,widget: string}
