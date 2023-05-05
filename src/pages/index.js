@@ -26,7 +26,7 @@ export default function Home({ data }) {
         <FeaturedJobs data={data} />
         <Testimonial data={data} />
         <CountUpSection data={data} />
-        <Pricing />
+        <Pricing data={data} />
         <LatestNews />
       </div>
     </Layout>
@@ -95,6 +95,25 @@ query home {
             number
             title
           }
+        }
+      }
+    }
+    pricingPlan: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Pricing Plan"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          pricingPlan {
+            duration
+            price
+            title
+            pricingPlanItems {
+              items
+            }
+          }
+          subTitle
         }
       }
     }

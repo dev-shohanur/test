@@ -60,6 +60,15 @@ module.exports = {
         path: `${__dirname}/src/counter/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `pricingPlan`,
+        // Path to the directory
+        path: `${__dirname}/src/pricingPlan/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
