@@ -62,8 +62,8 @@ collections:
     create: true
     fields:
       - { name: id, label: Id , widget: number}
-      - { name: image1, label: Logo 1 ,widget: string}
-      - { name: image2, label: Logo 2 ,widget: string}
-      - { name: image3, label: Logo 3 ,widget: string}
-      - { name: image4, label: Logo 4 ,widget: string}
-      - { name: image5, label: Logo 5 ,widget: string}
+      - { name: image1, label: Logo 1 ,widget: image}
+      - { name: image2, label: Logo 2 ,widget: image}
+      - { name: image3, label: Logo 3 ,widget: image}
+      - { name: image4, label: Logo 4 ,widget: image}
+      - { name: image5, label: Logo 5 ,widget: image}
