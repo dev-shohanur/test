@@ -1,5 +1,6 @@
 ---
 id: 1
+title: Counter Up
 counterData: 
    - number: 36789
      title: Talented Freelancer

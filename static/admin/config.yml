@@ -83,6 +83,7 @@ collections:
     folder: src/counter
     create: true
     fields:
+      - { name: title, label: Section Title ,widget: string}
       -  name: counterData
          label: Counter Data
          widget: list 
