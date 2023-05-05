@@ -110,3 +110,15 @@ collections:
               widget: list 
               fields: 
                   - { name: items, label: Title ,widget: string}
+
+  - name: logoSection
+    label: Clint Logo Section
+    folder: src/logoSection
+    create: true
+    fields:
+      - { name: section, label: Section Title ,widget: string}
+      -  name: Logos
+         label: Clint Logos
+         widget: list 
+         fields: 
+            - { name: logo, label: Logo ,widget: image}
