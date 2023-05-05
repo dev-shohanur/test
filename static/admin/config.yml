@@ -47,7 +47,7 @@ collections:
 
   - name: whyChooseUs
     label: Why Choose Us
-    folder: src/Why Choose Us
+    folder: src/whyChooseUs
     create: true
     fields:
       - { name: id, label: Id , widget: number}
