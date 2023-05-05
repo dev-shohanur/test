@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ClintLogo = ({ data }) => {
-  console.log(data.logoSection.nodes[0].frontmatter);
   return (
     <div className='container my-[84px]'>
       <div className="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2">
