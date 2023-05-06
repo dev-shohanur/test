@@ -16,8 +16,9 @@ import { Autoplay, Pagination } from "swiper";
 
 
 
-const Hero = () => {
+const Hero = ({ data }) => {
   const [isVideoOpen, setVideoOpen] = useState(false);
+  const sectionData = data.hero.nodes[0].frontmatter
   return (
     <>
       <React.Fragment>
@@ -38,17 +39,14 @@ const Hero = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
-
-        <SwiperSlide>
+        {sectionData.sliderItems.map(slide => <SwiperSlide>
           <div className="bg-[#F8F9FD] ">
             <div className='container pt-24'>
               <div className="lg:grid lg:grid-cols-2 grid-cols-1 items-center flex flex-col-reverse">
                 <div className="md:pb-0 pb-10">
-                  <h2 className='xl:text-[3.75rem] md:text-[3rem] text-[2.5rem] xl:leading-[80px] leading-[48px] font-semibold text-[#363848]'>Find out <span className="text-[#5F4BDB]">talented  freelancer</span> with better review faster</h2>
+                  <h2 className='xl:text-[3.75rem] md:text-[3rem] text-[2.5rem] xl:leading-[80px] leading-[48px] font-semibold text-[#363848]'>{slide.heroTitleFirst} <span className="text-[#5F4BDB]">{slide.heroTitleSecond}</span> {slide.heroTitleThird}</h2>
 
-                  <p className='text-[16px] font-normal text-[#11142D] leading-[28px] my-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    <br />
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className='text-[16px] font-normal text-[#11142D] leading-[28px] my-6'>{slide.heroSubTitle}</p>
                   <div className="flex items-center">
                     <button className='btn bg-[#5F4BDB] border-none rounded-full font-semibold capitalize pl-[31px] pr-[42px] pt-4 pb-[17px] text-[18px] text-[#fff] mr-[20px]'>Discover Now</button>
                     <button onClick={() => setVideoOpen(true)} className='flex justify-between items-center'>
@@ -60,13 +58,13 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="relative">
-                  <img className='w-full' src="/images/heroImage.png" alt="" srcset="" />
+                  <img className='w-full' src={slide.heroImage} alt="" srcset="" />
                   <div className="absolute bottom-5 left-0 flex items-start backdrop-blur-[20px] rounded-[17px] p-[26px] shadow">
                     <div className="flex">
-                      <img src="/images/hero-card-user.png" alt="" srcset="" />
+                      <img src={slide.heroUserImage} alt="" srcset="" />
                       <div className="ml-3 items-center">
-                        <h2 className='text-[#000000] text-[26px] leading-[39px] font-semibold'>David</h2>
-                        <p className='text-[#000000] text-[15px] leading-[20px] font-normal'>UI/UX Designer</p>
+                        <h2 className='text-[#000000] text-[26px] leading-[39px] font-semibold'>{slide.heroUserName}</h2>
+                        <p className='text-[#000000] text-[15px] leading-[20px] font-normal'>{slide.heroUserTitle}</p>
                         <div className="flex items-center">
                           <FaStar className='text-[#FF8412] text-[16px] mr-[6px]' />
                           <FaStar className='text-[#FF8412] text-[16px] mr-[6px]' />
@@ -90,7 +88,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide>)}
+
 
       </Swiper>
     </>

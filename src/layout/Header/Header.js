@@ -2,6 +2,7 @@ import { Link } from "gatsby";
 import React, { useState } from 'react';
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 import '../../styles/global.css';
+import './header.css';
 
 
 
@@ -28,7 +29,7 @@ const Header = () => {
   return (
     <>
       <nav className='relative'>
-        <div className={`  ${scrollNav ? 'py-[20px] fixed top-0 left-0 right-0 bg-[#fff] shadow' : 'block py-[32px]  '} ${isHome === '/' ? 'bg-[#F8F9FD]' : ' backdrop-blur-[10px]'}  z-50  transition-transform duration-700 ease-in-out`}>
+        <div className={`  ${scrollNav ? 'ziro-navbar' : 'ziro-navbar2  '} ${isHome === '/' ? 'ziro-navbar3' : 'ziro-navbar4'}  ziro-navbar5`}>
           <div className="grid grid-cols-2 items-center justify-between container w-[90%] mx-auto">
             <div className=" flex items-center gap-6">
               <div className="logo">
@@ -37,11 +38,11 @@ const Header = () => {
               <div className="lg:block hidden w-full">
                 <ul className='flex items-center justify-center gap-4'>
                   <li><Link to={'/'} className='text-[18px] leading-[27px] font-semibold text-[#363848] hover:text-[#5F4BDB] mb-[20px] transition-all duration-700'>Home</Link></li>
-                  <li className='relative transition-all duration-700 group/item' >
+                  <li className='relative transition-all duration-700 ziro-dropdown-menu-items' >
 
                     <Link to={'/job-list'} className=' text-[18px] leading-[27px] font-semibold text-[#363848] hover:text-[#5F4BDB] transition-all duration-700 mb-[20px]'>
                       Jobs
-                      <ul class="group/edit z-[9999] bg-[#FFF] shadow-xl rounded absolute top-7 transition-all duration-700 left-0 group-hover/item:visible invisible flex opacity-0 group-hover/item:opacity-100 mt-5 p-6  group-hover/item:mt-0 hover:flex
+                      <ul class="group/editbg-[#FFF] shadow-xl ziro-dropdown-menu hover:flex
          w-[200px] flex-col drop-shadow-lg">
                         <li><Link to={'/job-list'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Jobs List</Link></li>
                         <li><Link to={'/job-detail/1'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Job Details</Link></li>
@@ -50,11 +51,11 @@ const Header = () => {
 
 
                   </li>
-                  <li className='relative transition-all duration-700' >
+                  <li className='relative transition-all duration-700 ziro-dropdown-menu-items' >
 
-                    <Link to={'/eventList'} className='group/item text-[18px] leading-[27px] font-semibold text-[#363848] hover:text-[#5F4BDB] transition-all duration-700 mb-[20px]'>
+                    <Link to={'/eventList'} className=' text-[18px] leading-[27px] font-semibold text-[#363848] hover:text-[#5F4BDB] transition-all duration-700 mb-[20px]'>
                       Page
-                      <ul class="group/edit z-[9999] bg-[#FFF] shadow rounded absolute top-7 transition-all duration-700 left-0 group-hover/item:visible invisible flex opacity-0 group-hover/item:opacity-100 mt-5 p-6  group-hover/item:mt-0 hover:flex
+                      <ul class="group/edit ziro-dropdown-menu bg-[#FFF] shadow hover:flex
          w-[220px] flex-col drop-shadow-lg">
                         <li><Link to={'/applicationForm'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Apply Job</Link></li>
                         <li><Link to={'/freelancers'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Freelancers List</Link></li>
@@ -107,7 +108,7 @@ const Header = () => {
           </div>
           <div onClick={() => setOpenMenu(!openMenu)} className={` bg-[#000] fixed transition-all ease-in  	delay-100 left-0 opacity-25 top-[0] p-6 w-[100vw] h-[100vh] shadow-lg ${openMenu ? 'block	z-[9998]' : 'hidden z-0'}`}></div>
         </div>
-      </nav>
+      </nav >
     </>
   );
 };

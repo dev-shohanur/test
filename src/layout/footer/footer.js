@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-bg-black">
       <div className='container'>
         <div className="grid lg:grid-cols-2 grid-cols-1 py-24 items-center">
-          <h2 className='xl:text-[2.75rem] text-[2rem] lg:text-left text-center xl:leading-[76px] font-semibold text-[#FFFFFF]'>Don’t miss our weekly updates about freelancer career</h2>
+          <h2 className=' top-footer-title font-semibold text-[#FFFFFF]'>Don’t miss our weekly updates about freelancer career</h2>
           <div className="">
             <div className="flex justify-between items-center border-[1px] border-[#363843] rounded-full p-[10px]  w-full ml-0">
               <input type="email" name="email" className='input w-full text-[#FFFFFF] bg-transparent' placeholder='Enter your email address...' id="" />
@@ -21,9 +21,9 @@ const Footer = () => {
 
 
       <footer className="footer">
-        <div className="xl:container">
+        <div className="xl:container mx-auto">
           <div className=" flex flex-wrap p-10  text-base-content">
-            <div className='lg:w-[30%] md:w-6/12 w-full mt-3'>
+            <div className='ziro-footer-info'>
               <img src="/images/logoWhite.png" alt="" className='mb-9' srcset="" />
               <p>
                 Ziro is a Freelance Landing Website lorem ipsum dolor sit
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='lg:w-[13%] md:w-3/12 w-6/12 flex flex-col mt-3'>
+            <div className='ziro-footer-items flex flex-col mt-3'>
               <span className="footer-title">Ziro</span>
               <a className="link link-hover">Why Ziro</a>
               <a className="link link-hover">Enterprise</a>
@@ -57,20 +57,20 @@ const Footer = () => {
               <a className="link link-hover">Security</a>
               <a className="link link-hover">Pricing</a>
             </div>
-            <div className='lg:w-[13%] md:w-3/12 w-6/12 flex flex-col mt-3'>
+            <div className='ziro-footer-items flex flex-col mt-3'>
               <span className="footer-title">Company</span>
               <a className="link link-hover">About us</a>
               <a className="link link-hover">Contact</a>
               <a className="link link-hover">Jobs</a>
               <a className="link link-hover">Press kit</a>
             </div>
-            <div className='lg:w-[13%] md:w-3/12 w-6/12 flex flex-col mt-3'>
+            <div className='ziro-footer-items flex flex-col mt-3'>
               <span className="footer-title">Legal</span>
               <a className="link link-hover">Terms of use</a>
               <a className="link link-hover">Privacy policy</a>
               <a className="link link-hover">Cookie policy</a>
             </div>
-            <div className='lg:w-[30%] md:w-6/12 w-full flex flex-col mt-3'>
+            <div className='ziro-footer-contact-info flex flex-col mt-3'>
               <span className="footer-title">Get in Touch with Us</span>
               <ul>
                 <li className='flex items-start'>
@@ -94,7 +94,7 @@ const Footer = () => {
 
 
       <hr />
-      <div className="container pt-[27px] pb-[33px]">
+      <div className="container footer-copy-right">
         <div className="md:flex block items-center justify-between">
           <p className='text-[16px] leading-[24px] font-medium text-[#FFFFFF]'>Ziro Freelancer Landing Website  -   © 2020 All Rights Reserved</p>
           <p className='text-[16px] leading-[24px] font-normal md:text-right text-left text-[#FFFFFF]'>Made with ♥ by Peterdraw</p>

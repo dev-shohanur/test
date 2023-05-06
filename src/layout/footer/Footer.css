@@ -36,3 +36,76 @@
 .footer-bg-black {
   background: #1F2131;
 }
+
+.footer-bg-black .py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.top-footer-title {
+  font-size: 2rem;
+  text-align: center;
+
+
+}
+
+.ziro-footer-items {
+  width: 50%;
+
+}
+
+.ziro-footer-contact-info {
+  width: 100%;
+}
+
+.ziro-footer-info {
+  width: 100%;
+  margin-top: 0.75rem;
+
+}
+
+.footer-copy-right {
+  padding-top: 27px;
+  padding-bottom: 33px;
+
+}
+
+@media (min-width: 768px) {
+  .ziro-footer-items {
+    width: 25%;
+  }
+
+  .ziro-footer-contact-info {
+    width: 50%;
+  }
+
+  .ziro-footer-info {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .top-footer-title {
+    text-align: left;
+  }
+
+  .ziro-footer-items {
+    width: 13%;
+  }
+
+  .ziro-footer-contact-info {
+    width: 30%;
+  }
+
+  .ziro-footer-info {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .top-footer-title {
+    font-size: 2.75rem;
+    line-height: 76px;
+  }
+}

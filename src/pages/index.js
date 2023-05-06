@@ -18,7 +18,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div className="bg-white">
-        <Hero />
+        <Hero data={data} />
         <ClintLogo />
         <HowItWork data={data} />
         <WhyChoose data={data} />
@@ -134,6 +134,25 @@ query home {
             id
             idBGColor
             idColor
+          }
+        }
+      }
+    }
+
+    hero: allMarkdownRemark(filter: {frontmatter: {section: {in: "hero"}}}) {
+      nodes {
+        frontmatter {
+          id
+          section
+          sliderItems {
+            heroImage
+            heroSubTitle
+            heroTitleFirst
+            heroTitleSecond
+            heroTitleThird
+            heroUserImage
+            heroUserName
+            heroUserTitle
           }
         }
       }
