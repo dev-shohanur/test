@@ -137,6 +137,26 @@ collections:
          fields: 
             - { name: question, label: Question ,widget: string}
             - { name: id, label: id ,widget: number}
-            - { name: idColor, label: Id Color ,widget: color}
-            - { name: idBGColor, label: Id Background Color ,widget: color,enableAlpha: true, allowInput: true}
+            - { name: idColor, label: Id Color ,widget: string}
+            - { name: idBGColor, label: Id Background Color ,widget: string}
             - { name: answer, label: answer ,widget: string}
+
+  - name: hero
+    label: Hero
+    folder: src/hero
+    create: true
+    fields:
+      - { name: section, label: Title ,widget: string}
+      -  name: sliderItems
+         label: Slider Items
+         widget: list 
+         fields: 
+            - { name: heroTitleFirst, label: heroTitleFirst ,widget: string}
+            - { name: heroTitleSecond, label: heroTitleSecond ,widget: string}
+            - { name: heroTitleThird, label: heroTitleThird ,widget: string}
+            - { name: heroSubTitle, label: Hero Sub Title ,widget: string}
+            - { name: heroImage, label: Hero Image ,widget: image}
+            - { name: id, label: id ,widget: number}
+            - { name: heroUserImage, label: Hero Card User Image ,widget: image}
+            - { name: heroUserName, label: Hero Card User Name ,widget: string}
+            - { name: heroUserTitle, label: Hero Card User Title ,widget: string}

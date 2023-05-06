@@ -131,6 +131,9 @@ query home {
           faq {
             answer
             question
+            id
+            idBGColor
+            idColor
           }
         }
       }

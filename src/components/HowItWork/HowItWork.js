@@ -23,7 +23,7 @@ const HowItWork = ({ data }) => {
                 <div className="collapse mb-[34px] collapse-arrow border border-white bg-white shadow-lg rounded-box py-4 px-6">
                   <input type="checkbox" className="peer" />
                   <div className="collapse-title text-xl font-medium">
-                    <span className='w-[84px] h-[84px] text-[#2B3DC7] text-[36px] leading-[54px] bg-[#E7E9FF] rounded-[26px] px-[35px] py-4 mr-[29px]'>1</span>
+                    <span className={`w-[84px] h-[84px] text-[${faq.idColor}] text-[36px] leading-[54px] bg-[${faq.idBGColor}] rounded-[26px] px-[35px] py-4 mr-[29px]`}>{faq.id}</span>
 
                     {faq.question}
                   </div>
@@ -32,7 +32,7 @@ const HowItWork = ({ data }) => {
                   </div>
                   {/* </div> */}
                 </div>)}
-              <div className="collapse mb-[34px] collapse-arrow border border-white bg-white shadow-lg rounded-box py-4 px-6">
+              {/* <div className="collapse mb-[34px] collapse-arrow border border-white bg-white shadow-lg rounded-box py-4 px-6">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title text-xl font-medium">
                   <span className='w-[84px] h-[84px] text-[#8E22E2] text-[36px] leading-[54px] bg-[#F6EBFF] rounded-[26px] px-[35px] py-4 mr-[29px]'>2</span>
@@ -82,7 +82,7 @@ const HowItWork = ({ data }) => {
                 <div className="collapse-content">
                   <p className='w-[80%] ml-[18%]'>Lorem ipsum dolor  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className={`flex items-center relative `}>

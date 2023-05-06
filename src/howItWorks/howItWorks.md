@@ -5,18 +5,18 @@ title: Start find a job you love with us easily
 sectionImage: https://i.ibb.co/ZTKFmBW/righSide.png
 faq: 
   - question: Complete Profile
-    id: 1
-    idColor: #2B3DC7
-    idBGColor: #E7E9FF
     answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    id: 1
+    idColor: '#2B3DC7'
+    idBGColor: '#E7E9FF'
   - question: Search Vacancies
+    answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     id: 2
-    idColor: #8E22E2
-    idBGColor: #F6EBFF
-    answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    idColor: '#8E22E2'
+    idBGColor: '#F6EBFF'
   - question: Apply Jobs
-    id: 1
-    idColor: #3DCD65
-    idBGColor: #E9FFEF
     answer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    id: 1
+    idColor: '#3DCD65'
+    idBGColor: '#E9FFEF'
 ---
