@@ -13,7 +13,7 @@ export default function JobDetails({ data }) {
       <Layout>
         <JobAndCompanyDetail data={data} />
         <RelatedJobs recentJob={recentJob} />
-        <ClintLogo />
+        <ClintLogo data={data} />
       </Layout>
     </div>
   )
@@ -62,5 +62,6 @@ query Job($id: Int) {
           }
         }
       }
+     
   }
 `

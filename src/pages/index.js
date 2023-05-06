@@ -19,7 +19,7 @@ export default function Home({ data }) {
     <Layout>
       <div className="bg-white">
         <Hero />
-        <ClintLogo data={data} />
+        <ClintLogo />
         <HowItWork />
         <WhyChoose data={data} />
         <FeatureProfile />
