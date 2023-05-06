@@ -136,4 +136,7 @@ collections:
          widget: list 
          fields: 
             - { name: question, label: Question ,widget: string}
+            - { name: id, label: id ,widget: number}
+            - { name: idColor, label: Id Color ,widget: color}
+            - { name: idBGColor, label: Id Background Color ,widget: color}
             - { name: answer, label: answer ,widget: string}

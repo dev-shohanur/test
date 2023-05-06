@@ -20,7 +20,7 @@ export default function Home({ data }) {
       <div className="bg-white">
         <Hero />
         <ClintLogo />
-        <HowItWork />
+        <HowItWork data={data} />
         <WhyChoose data={data} />
         <FeatureProfile />
         <FeaturedJobs data={data} />
@@ -119,7 +119,22 @@ query home {
         }
       }
     }
-   
+    howItWork: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "How it works"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          title
+          sectionImage
+          faq {
+            answer
+            question
+          }
+        }
+      }
+    }
  
   }
   
