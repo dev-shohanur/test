@@ -8,6 +8,7 @@ pricingPlan:
     price: 0
     duration: per month
     pricingPlanItems:
+      - items: Lorem ipsum dolor sit ame
       - items: Consectetur adipiscing elit, sed Do
       - items: eiusmod tempor incididunt
   - title: PREMIUM
