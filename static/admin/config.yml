@@ -160,3 +160,27 @@ collections:
             - { name: heroUserImage, label: Hero Card User Image ,widget: image}
             - { name: heroUserName, label: Hero Card User Name ,widget: string}
             - { name: heroUserTitle, label: Hero Card User Title ,widget: string}
+
+  - name: latestBlog
+    label: Latest Blog
+    folder: src/latestBlog
+    create: true
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: section, label: Title ,widget: string}
+      - { name: subTitle, label: Sub Title ,widget: string}
+      -  name: news
+         label: News
+         widget: list 
+         fields: 
+            - { name: id, label: id ,widget: number}
+            - { name: image, label: Image ,widget: image}
+            - { name: author, label: Author ,widget: string}
+            - { name: date, label: Date ,widget: string}
+            - { name: title, label: News Title ,widget: string}
+            - { name: details, label: Details ,widget: string}
+            - { name: image2, label: Image Tow,widget: image}
+            - { name: author2, label: Author Two,widget: string}
+            - { name: date2, label: Date Two,widget: string}
+            - { name: title2, label: News Title Two,widget: string}
+            - { name: details2, label: Details Two,widget: string}
