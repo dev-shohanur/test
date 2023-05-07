@@ -184,3 +184,22 @@ collections:
             - { name: date2, label: Date Two,widget: string}
             - { name: title2, label: News Title Two,widget: string}
             - { name: details2, label: Details Two,widget: string}
+
+  - name: featureProfile
+    label: Feature Profile
+    folder: src/featureProfile
+    create: true
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: section, label: Title ,widget: string}
+      - { name: subTitle, label: Sub Title ,widget: string}
+      -  name: profile
+         label: profile
+         widget: list 
+         fields: 
+            - { name: id, label: id ,widget: number}
+            - { name: image, label: Image ,widget: image}
+            - { name: username, label: Username ,widget: string}
+            - { name: prof, label: Profile ,widget: string}
+            - { name: rating, label: Rating ,widget: number}
+            - { name: price, label: Price ,widget: number}
