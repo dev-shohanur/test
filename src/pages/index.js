@@ -22,12 +22,12 @@ export default function Home({ data }) {
         <ClintLogo />
         <HowItWork data={data} />
         <WhyChoose data={data} />
-        <FeatureProfile />
+        <FeatureProfile data={data} />
         <FeaturedJobs data={data} />
         <Testimonial data={data} />
         <CountUpSection data={data} />
         <Pricing data={data} />
-        <LatestNews />
+        <LatestNews data={data} />
       </div>
     </Layout>
   )
@@ -153,6 +153,49 @@ query home {
             heroUserImage
             heroUserName
             heroUserTitle
+          }
+        }
+      }
+    }
+    latestNews: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Latest News"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          subTitle
+          news {
+            author
+            author2
+            date
+            date2
+            details
+            details2
+            id
+            image
+            image2
+            title
+            title2
+          }
+        }
+      }
+    }
+    featuredprofile: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Featured profile this week"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          subTitle
+          featuredprofile {
+            id
+            image
+            price
+            prof
+            rating
+            username
           }
         }
       }

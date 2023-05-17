@@ -2,7 +2,7 @@
 id: 1
 section: Featured profile this week
 subTitle: How it works
-profile: 
+featuredprofile: 
   - id: 1
     image: "/images/placeholder1.png"
     username: "David Hutapea"

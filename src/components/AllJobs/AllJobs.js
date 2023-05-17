@@ -4,6 +4,9 @@ import { FaHeart } from 'react-icons/fa';
 import JobFilter from '../JobFilter/JobFilter';
 
 const AllJobs = ({ data }) => {
+
+  data?.allMarkdownRemark?.nodes.map((job) => console.log(job))
+
   return (
     <div className='container my-[10px]'>
       <JobFilter />
@@ -30,7 +33,7 @@ const AllJobs = ({ data }) => {
             <div className="flex items-center">
               <img src="/images/icLocation2.png" alt="" srcset="" />
               <div className="ml-[25px]">
-                <h2 className='text-[20px] leading-[36px] font-medium text-[#2E2E2E] mb-[7px]'>{job?.frontmatter?.location}</h2>
+                <h2 className='text-[20px] leading-[36px] font-medium text-[#2E2E2E] mb-[7px]'>{job?.frontmatter?.locationArea}</h2>
                 <p className='text-[16px] leading-[24px] font-normal text-[#8A8A8A]'>Location</p>
               </div>
             </div>

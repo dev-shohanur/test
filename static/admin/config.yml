@@ -203,3 +203,21 @@ collections:
             - { name: prof, label: Profile ,widget: string}
             - { name: rating, label: Rating ,widget: number}
             - { name: price, label: Price ,widget: number}
+
+
+  - name: jobListPageHero
+    label: Job List Page Hero
+    folder: src/jobListPageHero
+    create: false
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: firstTitle, label: first Title ,widget: string}
+      - { name: secondTitle, label: second Title ,widget: string}
+      - { name: thradTitle, label: thrad Title ,widget: string}
+      - { name: searchBtn, label: search Btn Text ,widget: string}
+      - { name: heroImage, label: hero Image ,widget: image}
+      -  name: jobTag
+         label: jobTag
+         widget: list 
+         fields:
+            - { name: btn, label: Tag Btn Text ,widget: string}

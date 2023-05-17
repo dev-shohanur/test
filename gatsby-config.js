@@ -96,6 +96,24 @@ module.exports = {
         path: `${__dirname}/src/hero/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `latestBlog`,
+        // Path to the directory
+        path: `${__dirname}/src/latestBlog/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `featureProfile`,
+        // Path to the directory
+        path: `${__dirname}/src/featureProfile/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
