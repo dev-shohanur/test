@@ -2,6 +2,7 @@
 id: 4
 name: Jordan Sigh
 profession: Graphic Designer
+freelancer: true
 rating: 4.8
 location: New York
 member: Nov 2020

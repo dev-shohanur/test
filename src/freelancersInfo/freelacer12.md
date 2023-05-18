@@ -2,6 +2,7 @@
 id: 12
 name: Samantha William
 profession: Graphic designer
+freelancer: true
 rating: 5
 location: Bangladesh
 member: Feb 2022

@@ -2,6 +2,7 @@
 id: 5
 name: Mahmud
 profession: Programmer
+freelancer: true
 rating: 4.9
 location: Jakarta, Indonesia
 member: Nov 2014

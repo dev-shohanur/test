@@ -2,6 +2,7 @@
 id: 7
 name: Gwen Claudya
 profession: Programmer
+freelancer: true
 rating: 5
 location: Australia
 member: Mar 2017

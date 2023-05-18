@@ -4,7 +4,9 @@ import JobFilter from '../JobFilter/JobFilter';
 
 const FreelancerList = ({ data }) => {
 
-  const freelancersInfo = data.allMarkdownRemark.nodes
+  console.log(data.FreelancersInfo);
+
+  const freelancersInfo = data.FreelancersInfo.nodes
   return (
     <div>
       <div className="container">

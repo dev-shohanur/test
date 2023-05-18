@@ -2,6 +2,7 @@
 id: 1
 name: Angela Moss
 profession: Content Writer
+freelancer: true
 rating: 4.3
 location: New York, USA
 member: Oct 2008

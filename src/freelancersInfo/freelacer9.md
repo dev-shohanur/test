@@ -2,6 +2,7 @@
 id: 9
 name: Kokom
 profession: Photographer
+freelancer: true
 rating: 4
 location: India
 member: Dec 2019

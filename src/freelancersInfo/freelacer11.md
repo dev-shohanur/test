@@ -2,6 +2,7 @@
 id: 11
 name: Louis Anderson
 profession: Content Writer
+freelancer: true
 rating: 4
 location: USA
 member: Feb 2023

@@ -2,6 +2,7 @@
 id: 2
 name: Jimmy Lee
 profession: Programmer
+freelancer: true
 rating: 4.7
 location: Jakarta, Indonesia
 member: Oct 2014

@@ -2,6 +2,7 @@
 id: 6
 name: Roberto Karloz
 profession: Photographer
+freelancer: true
 rating: 3
 location: England
 member: Feb 2018

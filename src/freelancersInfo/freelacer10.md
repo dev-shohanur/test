@@ -2,6 +2,7 @@
 id: 10
 name: Fanny Fancyson
 profession: Programmer
+freelancer: true
 rating: 4
 location: Japan
 member: Jan 2023

@@ -14,7 +14,7 @@ export default function Freelancers({ data }) {
       <div>
         <FreelancerHero />
         <div className="-mt-[220px]">
-          <FeatureProfile />
+          <FeatureProfile data={data} />
         </div>
         <FreelancerList data={data} />
         <ClintLogo />
@@ -25,8 +25,11 @@ export default function Freelancers({ data }) {
 
 
 export const query = graphql`
-query FreelancersInfo {
-    allMarkdownRemark(sort: {id: DESC}, filter: {html: {eq: ""}}) {
+query Freelancers {
+  FreelancersInfo:  allMarkdownRemark(
+    sort: {id: DESC}
+    filter: {frontmatter: {freelancer: {in: true}}}
+  ) {
       nodes {
         frontmatter {
           id
@@ -39,6 +42,25 @@ query FreelancersInfo {
           member
           location
           lastReview
+        }
+      }
+    }
+    featuredprofile: allMarkdownRemark(
+      filter: {frontmatter: {section: {in: "Featured profile this week"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          section
+          subTitle
+          featuredprofile {
+            id
+            image
+            price
+            prof
+            rating
+            username
+          }
         }
       }
     }

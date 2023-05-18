@@ -2,6 +2,7 @@
 id: 8
 name: Bella Smith
 profession: Content Writer
+freelancer: true
 rating: 5
 location: Pakistan
 member: Dec 2015

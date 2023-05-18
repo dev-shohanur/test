@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 
 
 const FeatureProfile = ({ data }) => {
+  console.log(data);
   const sectionData = data.featuredprofile.nodes[0].frontmatter;
 
   var settings = {

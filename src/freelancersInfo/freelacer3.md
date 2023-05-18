@@ -2,6 +2,7 @@
 id: 3
 name: Melinda Humbles
 profession: Graphic Designer
+freelancer: true
 rating: 4
 location: New York
 member: Oct 2020
