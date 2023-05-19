@@ -74,7 +74,7 @@ const Header = () => {
               <FaBars className='text-[26px] lg:hidden block float-right cursor-pointer transition duration-700 ease-in-out' onClick={() => setOpenMenu(!openMenu)} />
               <div className="lg:flex hidden items-center justify-end">
                 <div className={`flex justify-between items-center rounded-full mr-[20px] px-4 ml-3 ${scrollNav ? 'bg-[#F8F9FD]' : 'bg-[#FFF]'}`}>
-                  <input type="text" name="search" id="" className='input w-full bg-transparent text-[#818181]' value={`Search here...`} />
+                  <input type="text" name="search" id="" className='input focus:outline-none w-full bg-transparent text-[#818181]' placeholder="Search here..." />
                   <FaSearch className='w-[24] h-[24] text-[#646464]' />
                 </div>
                 <div className="flex items-center">

@@ -2,9 +2,7 @@ import React from 'react';
 
 const JobListHero = ({ data }) => {
 
-  console.log(data);
-
-  const sectionData = data.jobListHero.nodes[0].frontmatter
+  const sectionData = data.jobListHero.nodes[0].frontmatter;
 
   return (
     <div>

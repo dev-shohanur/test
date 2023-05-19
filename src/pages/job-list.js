@@ -8,7 +8,6 @@ import JobListHero from '../components/JobListHero/JobListHero';
 import Layout from '../layout/layout';
 
 export default function JobList({ data }) {
-  console.log(data);
   return (
     <Layout>
       <div className='bg-white'>

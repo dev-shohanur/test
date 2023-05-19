@@ -4,8 +4,8 @@ import './EventListHero.css';
 
 const EventListHero = () => {
   return (
-    <div className="xl:container mx-6" >
-      <div className="carousel w-full xl:h-auto h-[60vh]">
+    <div className="xl:container xl:mx-auto mx-6" >
+      <div className="carousel w-full xl:h-auto h-[60vh] mx-auto">
         <div id="slide1" className="carousel-item relative w-full">
           <div className='grid lg:grid-cols-2 grid-cols-1 eventListHero rounded-[37px] overflow-hidden'>
             <div className="hero-bg">

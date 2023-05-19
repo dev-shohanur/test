@@ -5,7 +5,6 @@ import JobApplyFrom from '../components/JobApplyFrom/JobApplyFrom';
 import Layout from '../layout/layout';
 
 export default function ApplicationForm({ data }) {
-  console.log(data);
   return (
     <Layout>
       <div>

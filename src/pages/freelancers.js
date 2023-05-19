@@ -8,11 +8,10 @@ import FreelancerList from '../components/FreelancerList/FreelancerList';
 import Layout from '../layout/layout';
 
 export default function Freelancers({ data }) {
-  console.log(data);
   return (
     <Layout>
       <div>
-        <FreelancerHero />
+        <FreelancerHero data={data} />
         <div className="-mt-[220px]">
           <FeatureProfile data={data} />
         </div>
@@ -26,6 +25,26 @@ export default function Freelancers({ data }) {
 
 export const query = graphql`
 query Freelancers {
+
+  freelancersHero: allMarkdownRemark(
+    sort: {id: DESC}
+    filter: {frontmatter: {section: {in: "Freelancers Hero"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        firstTitle
+        secondTitle
+        thradTitle
+        jobTag {
+          btn
+        }
+        searchBtn
+        background
+      }
+    }
+  }
+
   FreelancersInfo:  allMarkdownRemark(
     sort: {id: DESC}
     filter: {frontmatter: {freelancer: {in: true}}}

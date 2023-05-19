@@ -1,9 +1,11 @@
-.eventListHero{
+.eventListHero {
   background-color: #372F67;
 }
-.eventListHero .hero-bg{
+
+.eventListHero .hero-bg {
   position: relative;
 }
+
 .eventListHero .hero-bg::after {
   position: absolute;
   content: '';
@@ -13,4 +15,54 @@
   height: 100%;
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #372F67 90%);
+}
+
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 520px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

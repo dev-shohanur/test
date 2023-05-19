@@ -12,7 +12,7 @@ const Footer = () => {
           <h2 className=' top-footer-title font-semibold text-[#FFFFFF]'>Don’t miss our weekly updates about freelancer career</h2>
           <div className="">
             <div className="flex justify-between items-center border-[1px] border-[#363843] rounded-full p-[10px]  w-full ml-0">
-              <input type="email" name="email" className='input w-full text-[#FFFFFF] bg-transparent' placeholder='Enter your email address...' id="" />
+              <input type="email" name="email" className='input w-full focus:outline-none text-[#FFFFFF] bg-transparent' placeholder='Enter your email address...' id="" />
               <button className='btn bg-[#FE8D4D] hover:bg-[#FE8D4D] 2xl:px-14 px-8 border-none rounded-full font-semibold py-[18px] text-[16px] text-[#ffffff] text-[#5F4BDB]'>SUBSCRIBE</button>
             </div>
           </div>

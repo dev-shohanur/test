@@ -240,3 +240,21 @@ collections:
          widget: list 
          fields:
             - { name: btn, label: Tag Btn Text ,widget: string}
+
+
+  - name: EventListHero
+    label: Event List Hero
+    folder: src/EventListHero
+    create: false
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: firstTitle, label: First Title ,widget: string}
+      - { name: title, label: Title ,widget: string}
+      - { name: date, label: Date ,widget: date}
+      - { name: location, label: Location ,widget: string}
+      - { name: details, label: Details ,widget: string}
+      - { name: name, label: Name ,widget: string}
+      - { name: value, label: Value ,widget: string}
+      - { name: btn1, label: Button One ,widget: string}
+      - { name: btn2, label: Button Two ,widget: string}
+      - { name: heroImage, label: Hero Image ,widget: image}

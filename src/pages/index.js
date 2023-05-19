@@ -14,7 +14,6 @@ import WhyChoose from '../components/WhyChoose/WhyChoose.js';
 import Layout from '../layout/layout';
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <Layout>
       <div className="bg-white">

@@ -6,7 +6,6 @@ import JobAndCompanyDetail from '../components/JobAndCompanyDetail/JobAndCompany
 import Layout from '../layout/layout';
 
 export default function JobDetails({ data }) {
-  console.log(data);
   const recentJob = data.allMarkdownRemark;
   return (
     <div>
