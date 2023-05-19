@@ -114,6 +114,15 @@ module.exports = {
         path: `${__dirname}/src/featureProfile/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `jobListPageHero`,
+        // Path to the directory
+        path: `${__dirname}/src/jobListPageHero/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",

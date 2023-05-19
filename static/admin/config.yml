@@ -221,3 +221,22 @@ collections:
          widget: list 
          fields:
             - { name: btn, label: Tag Btn Text ,widget: string}
+
+
+  - name: freelancers
+    label: Freelancers
+    folder: src/freelancers
+    create: false
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: firstTitle, label: first Title ,widget: string}
+      - { name: secondTitle, label: second Title ,widget: string}
+      - { name: thradTitle, label: thrad Title ,widget: string}
+      - { name: searchBtn, label: search Btn Text ,widget: string}
+      - { name: logo, label: Logo ,widget: image}
+      - { name: background, label: Background ,widget: image}
+      -  name: jobTag
+         label: jobTag
+         widget: list 
+         fields:
+            - { name: btn, label: Tag Btn Text ,widget: string}

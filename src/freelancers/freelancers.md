@@ -1,11 +1,12 @@
 ---
 id: 1
-section: Job List Hero
-firstTitle: Find your dream jobs through
-secondTitle: Ziro
-thradTitle: easily
+section: Freelancers Hero
+firstTitle: Search over
+secondTitle: 30,000+
+thradTitle: talented freelancers in the world through ziro
 searchBtn: Search Job
-heroImage: /images/jobFindHeroImg.png
+logo: /images/heroLogo.png
+background: https://i.ibb.co/QdMvjhk/flHeroBg.png
 jobTag:
   - btn: Web Dev
   - btn: Mobile Dev

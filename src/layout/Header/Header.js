@@ -57,7 +57,7 @@ const Header = () => {
                       Page
                       <ul class="group/edit ziro-dropdown-menu bg-[#FFF] shadow hover:flex
          w-[220px] flex-col drop-shadow-lg">
-                        <li><Link to={'/applicationForm'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Apply Job</Link></li>
+                        <li><Link to={'/applicationForm/1'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Apply Job</Link></li>
                         <li><Link to={'/freelancers'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Freelancers List</Link></li>
                         <li><Link to={'/eventList'} className='text-[18px] leading-[27px] font-medium text-[#363848] hover:text-[#5F4BDB] mb-[20px] ml-4 hover:ml-6 transition-all duration-700'>Event List</Link></li>
                       </ul>

@@ -12,7 +12,7 @@ export default function JobList({ data }) {
   return (
     <Layout>
       <div className='bg-white'>
-        <JobListHero />
+        <JobListHero data={data} />
         <AllJobs data={data} />
         <Events />
         <ClintLogo />
@@ -23,7 +23,7 @@ export default function JobList({ data }) {
 
 export const query = graphql`
 query JobsList {
-  allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}})  {
+ jobLists: allMarkdownRemark(sort: {id: DESC}, filter: {frontmatter: {}, html: {ne: ""}})  {
     nodes {
       frontmatter {
         id
@@ -33,6 +33,24 @@ query JobsList {
         locationArea
         team
         logo
+      }
+    }
+  }
+  jobListHero: allMarkdownRemark(
+    sort: {id: DESC}
+    filter: {frontmatter: {section: {in: "Job List Hero"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        firstTitle
+        secondTitle
+        thradTitle
+        jobTag {
+          btn
+        }
+        searchBtn
+        heroImage
       }
     }
   }

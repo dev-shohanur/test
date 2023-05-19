@@ -5,8 +5,6 @@ import JobFilter from '../JobFilter/JobFilter';
 
 const AllJobs = ({ data }) => {
 
-  data?.allMarkdownRemark?.nodes.map((job) => console.log(job))
-
   return (
     <div className='container my-[10px]'>
       <JobFilter />
@@ -14,7 +12,7 @@ const AllJobs = ({ data }) => {
       </div>
 
       {
-        data?.allMarkdownRemark?.nodes.map((job) => <div className="">
+        data?.jobLists?.nodes.map((job) => <div className="">
           <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 rounded-[20px] shadow-lg hover:shadow-2xl transition-all duration-700 gap-[30px] py-[25px] px-[32px] mb-[30px]">
             <div className="flex items-center">
               <img src={job?.frontmatter?.image} alt="" srcset="" />
