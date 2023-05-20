@@ -1,6 +1,7 @@
 ---
 id: 1
 section: Event List Hero
+title: Event List Hero
 sliderItems: 
    - id: 1
      hero: /images/eventHeroBg.png
