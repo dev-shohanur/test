@@ -132,6 +132,15 @@ module.exports = {
         path: `${__dirname}/src/freelancers/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `EventListHero`,
+        // Path to the directory
+        path: `${__dirname}/src/EventListHero/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
