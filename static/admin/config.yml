@@ -257,4 +257,4 @@ collections:
       - { name: value, label: Value ,widget: string}
       - { name: btn1, label: Button One ,widget: string}
       - { name: btn2, label: Button Two ,widget: string}
-      - { name: heroImage, label: Hero Image ,widget: image}
+      - { name: hero, label: Hero Image ,widget: image}
