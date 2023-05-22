@@ -263,3 +263,23 @@ collections:
            - { name: btn1, label: Button One ,widget: string}
            - { name: btn2, label: Button Two ,widget: string}
            - { name: hero, label: Hero Image ,widget: image}
+
+
+  - name: upcomingEvents
+    label: Upcoming Events Lists
+    folder: src/upcomingEvents
+    create: false
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: title, label: Title ,widget: string}
+      - name: events
+        label: Events
+        widget: list
+        fields:
+           - { name: id, label: Id ,widget: number}
+           - { name: title, label: Title ,widget: string}
+           - { name: day, label: day ,widget: number}
+           - { name: month, label: Month ,widget: string}
+           - { name: category, label: Category ,widget: string}
+           - { name: details, label: Details ,widget: string}
+           - { name: image, label: Image ,widget: image}

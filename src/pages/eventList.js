@@ -1,13 +1,14 @@
+import { graphql } from "gatsby";
 import * as React from "react";
 import { FaCalendar, FaChevronDown, FaHeart } from 'react-icons/fa';
 import ClintLogo from '../components/ClintLogo/ClintLogo';
 import EventListHero from '../components/EventListHero/EventListHero';
 import Layout from '../layout/layout';
+export default function EventList({ data }) {
 
-export default function EventList() {
   return (
     <Layout>
-      <EventListHero />
+      <EventListHero data={data} />
       <div className="container">
         <div className="md:flex items-center justify-between mt-14">
           <h2 className='text-[32px] leading-[48px] text-[#363848] font-semibold'>Upcoming Events</h2>
@@ -297,3 +298,32 @@ export default function EventList() {
     </Layout>
   );
 };
+
+
+export const query = graphql`
+query EventList {
+EventListHero: allMarkdownRemark(
+    sort: {id: DESC}
+    filter: {frontmatter: {section: {in: "Event List Hero"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        sliderItems {
+          btn1
+          btn2
+          date
+          details
+          firstTitle
+          hero
+          id
+          location
+          name
+          title
+          value
+        }
+      }
+    }
+  }
+}
+`

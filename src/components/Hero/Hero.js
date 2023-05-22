@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck, FaRegPlayCircle, FaStar, FaTimes } from 'react-icons/fa';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

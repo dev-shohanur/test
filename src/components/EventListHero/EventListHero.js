@@ -2,11 +2,64 @@ import React from 'react';
 import { FaCircle, FaHeart } from 'react-icons/fa';
 import './EventListHero.css';
 
-const EventListHero = () => {
+const EventListHero = ({ data }) => {
+
+  console.log(data);
+  const sectionData = data.EventListHero.nodes[0].frontmatter
+
   return (
     <div className="xl:container xl:mx-auto mx-6" >
       <div className="carousel w-full xl:h-auto h-[60vh] mx-auto">
-        <div id="slide1" className="carousel-item relative w-full">
+        {
+          sectionData.sliderItems.map(item => <div id={`slide${item.id}`} className="carousel-item relative w-full">
+            <div className='grid lg:grid-cols-2 grid-cols-1 eventListHero rounded-[37px] overflow-hidden'>
+              <div className="hero-bg">
+                <img className=' w-full h-[100%]' src={item.hero} alt="" srcset="" />
+              </div>
+              <div className="xl:py-20 my-10 xl:pr-24 pr-14 pl-4">
+                <h2 className='text-[18px] leading-[27px] text-[#FE8D4D] font-semibold'>{item.firstTitle}</h2>
+                <h2 className='xl:text-[44px] text-[24px] xl:leading-[66px] text-[#FFF] font-semibold'>{item.title}</h2>
+                <h2 className='flex flex-wrap mt-2 xl:mb-10 mb-4 gap-[22px] items-center text-[18px] leading-[28px] text-[#BFB5FF] font-semibold'>
+                  {item.date}
+                  <span className='text-[14px]'><FaCircle /></span>
+                  {item.location}
+                </h2>
+                <p className='xl:text-[16px] text-[14px] leading-[28px] font-normal text-[#FFF] mb-10'>
+                  {item.details}
+                </p>
+                <progress className="progress progress-primary w-full" value="64" max="100"></progress>
+                <div className="flex justify-between items-center">
+                  <span className='text-[18px] leading-[27px] font-normal text-[#FFF]'>{item.name}</span>
+                  <span className='text-[18px] leading-[27px] font-normal text-[#FFF]'>{item.value}</span>
+                </div>
+                <div className="flex items-center mt-10">
+                  <button className='btn bg-[#5F4BDB] hover:bg-[#ffffff14] border-none rounded-full font-semibold capitalize px-[50px] py-4 text-[16px] text-[#ffffff] mr-4'>{item.btn1}</button>
+                  <button className='btn hover:bg-[#5F4BDB] bg-[#ffffff14] border-none rounded-full font-semibold capitalize px-[50px] py-4 text-[16px] text-[#ffffff] '>
+                    <FaHeart className='mr-2' />
+                    {item.btn2}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              {
+                item?.id == 1 && <><a href="#slide4" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❮</a>
+                  <a href="#slide2" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❯</a></>
+              }
+              {
+                item?.id == 2 && <><a href="#slide1" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❮</a>
+                  <a href="#slide3" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❯</a></>
+
+              }
+              {
+                item?.id == 3 && <><a href="#slide2" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❮</a>
+                  <a href="#slide1" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❯</a></>
+
+              }
+            </div>
+          </div>)
+        }
+        {/* <div id="slide1" className="carousel-item relative w-full">
           <div className='grid lg:grid-cols-2 grid-cols-1 eventListHero rounded-[37px] overflow-hidden'>
             <div className="hero-bg">
               <img className=' w-full h-[100%]' src="/images/eventHeroBg.png" alt="" srcset="" />
@@ -153,7 +206,7 @@ const EventListHero = () => {
             <a href="#slide3" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❮</a>
             <a href="#slide1" className="btn btn-circle bg-[#FFF] hover:bg-[#FFF] text-[#000] text-2xl">❯</a>
           </div>
-        </div>
+        </div> */}
       </div>
 
     </div>
