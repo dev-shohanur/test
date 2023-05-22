@@ -283,3 +283,20 @@ collections:
            - { name: category, label: Category ,widget: string}
            - { name: details, label: Details ,widget: string}
            - { name: image, label: Image ,widget: image}
+
+
+  - name: jobDetailsTopBanner
+    label: job Details Top Banner
+    folder: src/jobDetailsTopBanner
+    create: false
+    fields:
+      - { name: id, label: id ,widget: number}
+      - { name: title, label: Title ,widget: string}
+      - { name: backBtnLink, label: back Btn Link ,widget: string}
+      - { name: backgroundImage, label: background Image ,widget: image}
+      - name: breadcrumb
+        label: Breadcrumb
+        widget: list
+        fields:
+           - { name: title, label: Title ,widget: string}
+           - { name: link, label: Link ,widget: string}

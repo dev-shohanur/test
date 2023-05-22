@@ -4,8 +4,10 @@ import { FaArrowLeft, FaHeart } from 'react-icons/fa';
 
 const JobAndCompanyDetail = ({ data }) => {
   const job = data.markdownRemark.frontmatter;
+  console.log(job);
   return (
     <div>
+      <div className='bg-[rgb(73 43 255 / 69%)]'></div>
       <div className="bg-[url(https://i.ibb.co/WBC3wdF/heading.png)]" style={{ zIndex: '-1' }}>
         <div className="container pt-14 pb-[200px] relative">
           <h3 className='text-[32px] leading-[48px] font-semibold text-[#FFF] text-center mb-3'>Job Details</h3>
@@ -86,7 +88,7 @@ const JobAndCompanyDetail = ({ data }) => {
                   <p className='text-[16px] leading-[22px] font-normal text-[#363848]'>Posted by {job?.admin} on November 12th, 2020</p>
                 </div>
                 <div className="flex items-center xl:gap-10 gap-5 md:mt-0 mt-6">
-                  <Link to={'/applicationFrom'}>
+                  <Link to={`/applicationForm/${job?.id}`}>
                     <button className='btn hover:bg-[#F0EEFF] bg-[#5F4BDB] border-none rounded-full font-semibold capitalize 2xl:px-14 px-8 xl:py-[18px] text-[16px] text-[#ffffff] hover:text-[#5F4BDB]'>Apply Now</button>
                   </Link>
                   <div>

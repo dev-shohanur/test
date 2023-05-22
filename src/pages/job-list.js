@@ -13,7 +13,7 @@ export default function JobList({ data }) {
       <div className='bg-white'>
         <JobListHero data={data} />
         <AllJobs data={data} />
-        <Events />
+        <Events data={data} />
         <ClintLogo />
       </div>
     </Layout>
@@ -50,6 +50,26 @@ query JobsList {
         }
         searchBtn
         heroImage
+      }
+    }
+  }
+  EventList: allMarkdownRemark(
+    sort: {id: DESC}
+    filter: {frontmatter: {section: {in: "Upcoming Events"}}}
+  ) {
+    nodes {
+      frontmatter {
+        id
+        title
+        events {
+          id
+          day
+          month
+          image
+          category
+          title
+          details
+        }
       }
     }
   }

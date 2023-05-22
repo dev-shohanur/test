@@ -141,6 +141,24 @@ module.exports = {
         path: `${__dirname}/src/EventListHero/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `upcomingEvents`,
+        // Path to the directory
+        path: `${__dirname}/src/upcomingEvents/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `jobDetailsTopBanner`,
+        // Path to the directory
+        path: `${__dirname}/src/jobDetailsTopBanner/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",
