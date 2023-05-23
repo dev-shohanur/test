@@ -7,6 +7,9 @@ import Layout from '../layout/layout';
 
 export default function JobDetails({ data }) {
   const recentJob = data.allMarkdownRemark;
+
+  console.log(data);
+
   return (
     <div>
       <Layout>
@@ -61,6 +64,22 @@ query Job($id: Int) {
           }
         }
       }
-     
+      jobDetailsTopBanner: allMarkdownRemark(
+        sort: {id: DESC}
+        filter: {frontmatter: {section: {in: "Job Details"}}}
+      ) {
+        nodes {
+          frontmatter {
+            id
+            title
+            backBtnLink
+            backgroundImage
+            breadcrumb {
+              link
+              title
+            }
+          }
+        }
+      }
   }
 `

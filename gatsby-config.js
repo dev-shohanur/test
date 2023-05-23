@@ -159,6 +159,15 @@ module.exports = {
         path: `${__dirname}/src/jobDetailsTopBanner/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `JobApplyFromTopBanner`,
+        // Path to the directory
+        path: `${__dirname}/src/JobApplyFromTopBanner/`,
+      },
+    },
   ],
   siteMetadata: {
     title: "Gatsby",

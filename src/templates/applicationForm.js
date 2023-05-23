@@ -37,6 +37,24 @@ query Job($id: Int) {
         tittleImg
       }
     }
+
+    JobApplyFrom: allMarkdownRemark(
+      sort: {id: DESC}
+      filter: {frontmatter: {section: {in: "Job Apply From"}}}
+    ) {
+      nodes {
+        frontmatter {
+          id
+          title
+          backBtnLink
+          backgroundImage
+          breadcrumb {
+            link
+            title
+          }
+        }
+      }
+    }
   }
 `
 

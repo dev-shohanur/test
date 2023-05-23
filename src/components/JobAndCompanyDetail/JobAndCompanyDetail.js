@@ -3,26 +3,32 @@ import React from 'react';
 import { FaArrowLeft, FaHeart } from 'react-icons/fa';
 
 const JobAndCompanyDetail = ({ data }) => {
+
+  const sectionData = data.jobDetailsTopBanner.nodes[0].frontmatter;
+
+  console.log(sectionData);
+
   const job = data.markdownRemark.frontmatter;
-  console.log(job);
   return (
     <div>
-      <div className='bg-[rgb(73 43 255 / 69%)]'></div>
-      <div className="bg-[url(https://i.ibb.co/WBC3wdF/heading.png)]" style={{ zIndex: '-1' }}>
-        <div className="container pt-14 pb-[200px] relative">
-          <h3 className='text-[32px] leading-[48px] font-semibold text-[#FFF] text-center mb-3'>Job Details</h3>
-          <div className="text-[16px] leading-[22px] font-normal text-[#FFF] flex justify-center breadcrumbs">
-            <ul>
-              <li><a>Home</a></li>
-              <li><a>Job List</a></li>
-              <li>Job Details</li>
-            </ul>
-          </div>
-          <Link to={'/'}>
-            <div className="p-3 bg-[#FFF] rounded-full absolute top-3 left-3 flex items-center justify-center">
-              <FaArrowLeft className='text-[#000] h-[24px] w-[24px] ' />
+      <div className='bg-[rgb(73 43 255 / 69%)]'>
+        <div className={`bg-[url(https://i.ibb.co/WBC3wdF/heading.png)]`} style={{ zIndex: '-1' }}>
+          <div className="container pt-14 pb-[200px] relative">
+            <h3 className='text-[32px] leading-[48px] font-semibold text-[#FFF] text-center mb-3'>{sectionData.title}</h3>
+            <div className="text-[16px] leading-[22px] font-normal text-[#FFF] flex justify-center breadcrumbs">
+              <ul>
+                {
+                  sectionData.breadcrumb.map(item => <li><Link to={item.link}>{item.title}</Link></li>)
+                }
+                <li>{sectionData.title}</li>
+              </ul>
             </div>
-          </Link>
+            <Link to={sectionData.backBtnLink}>
+              <div className="p-3 bg-[#FFF] rounded-full absolute top-3 left-3 flex items-center justify-center">
+                <FaArrowLeft className='text-[#000] h-[24px] w-[24px] ' />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 

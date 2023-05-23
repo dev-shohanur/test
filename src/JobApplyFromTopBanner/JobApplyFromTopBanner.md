@@ -1,7 +1,7 @@
 ---
 id: 1
-title: Job Details
-section: Job Details
+title: Job Apply From
+section: Job Apply From
 backBtnLink: /job-list
 backgroundImage: /images/heading.png
 breadcrumb: 
